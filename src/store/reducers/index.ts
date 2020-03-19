@@ -1,16 +1,20 @@
-import AppReducer from './reducers/app-reducer'
+import AppReducer from './app-reducer'
 import { IAppReducer } from '../types/app'
 import { combineReducers } from 'redux'
-import { routerReducer } from 'react-router-redux'
+import { History } from 'history'
+import { connectRouter, RouterState } from 'connected-react-router'
 
 export interface IApplicationState {
 	app: IAppReducer
+	router: RouterState
 }
 
-export const reducer = combineReducers({
-	app: AppReducer,
-	routing: routerReducer
-})
+export const createRootReducer = (history: History) =>
+	combineReducers({
+		app: AppReducer,
+		router: connectRouter(history)
+	})
+
 /*
 export function* rootSaga() {
 	yield all([fork(companiesSaga), fork(stationsSaga)])
