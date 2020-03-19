@@ -5,10 +5,15 @@ import IconButton from '@material-ui/core/IconButton'
 import CloseIcon from '@material-ui/icons/Close'
 import { connect } from 'react-redux'
 import { IApplicationState } from '../../store/reducers'
+import { deleteMessage } from '../../store/actions/app'
 
 const mapStateToProps = ({ app }: IApplicationState) => ({
 	message: app.message
 })
+
+const mapDispatchToProps = {
+	deleteMessage
+}
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -20,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export interface IWithSnackbar {
 	message: string
+	deleteMessage: () => void
 }
 
 export interface ISnackbarMessage {
@@ -28,7 +34,7 @@ export interface ISnackbarMessage {
 }
 
 const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
-	const WithSnackbar = ({ message }: IWithSnackbar) => {
+	const WithSnackbar = ({ message, deleteMessage }: IWithSnackbar) => {
 		const queueRef = React.useRef<ISnackbarMessage[]>([])
 
 		const [open, setOpen] = useState(false)
@@ -66,6 +72,7 @@ const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 			if (reason === 'clickaway') {
 				return
 			}
+			deleteMessage()
 			setOpen(false)
 		}
 
@@ -108,7 +115,7 @@ const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 		)
 	}
 
-	return connect(mapStateToProps)(WithSnackbar)
+	return connect(mapStateToProps, mapDispatchToProps)(WithSnackbar)
 }
 
 export default withSnackbar

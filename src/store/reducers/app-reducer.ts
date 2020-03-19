@@ -1,4 +1,3 @@
-import { Action } from 'typesafe-actions'
 import { AppTypes } from '../constants/app'
 import { IAppReducer } from '../types/app'
 import { Reducer } from 'redux'

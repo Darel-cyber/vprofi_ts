@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a1b0ce7-5a7c-43a5-a940-48bee8449561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hoc/withSnackbar/withSnackbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/types/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/MainPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotFoundPage/NotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFoundPage/NotFound.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/withSnackbar/withSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withSnackbar/withSnackbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/configureStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/configureStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/constants/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/app-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Wrappers.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -113,7 +100,7 @@
       <workItem from="1583953060445" duration="859000" />
       <workItem from="1584387276292" duration="1824000" />
       <workItem from="1584389115562" duration="8880000" />
-      <workItem from="1584477010146" duration="10386000" />
+      <workItem from="1584477010146" duration="12180000" />
     </task>
     <servers />
   </component>
