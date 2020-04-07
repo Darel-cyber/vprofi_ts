@@ -51,7 +51,21 @@
       "last 1 safari version"
     ]
   },
+  "plugins": [
+    "@babel/plugin-transform-typescript",
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
+  ],
+  "presets": [
+    "@babel/env",
+    "@babel/preset-typescript"
+  ],
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/plugin-transform-typescript": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
     "@redux-saga/types": "^1.1.0",
     "@types/react": "^16.9.19",
     "@types/react-redux": "^7.1.7",

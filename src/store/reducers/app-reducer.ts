@@ -1,21 +1,23 @@
-import { AppTypes } from '../constants/app'
 import { IAppReducer } from '../types/app'
-import { Reducer } from 'redux'
+import * as actions from '../actions/app'
+import { ActionType, getType } from 'typesafe-actions'
 
 const initialState: IAppReducer = {
 	initialized: false,
 	message: ''
 }
 
-const reducer: Reducer<IAppReducer> = (state = initialState, action) => {
+export type AppActions = ActionType<typeof actions>
+
+export default (state = initialState, action: AppActions): IAppReducer => {
 	switch (action.type) {
-		case AppTypes.INITIALIZED_SUCCESS: {
+		case getType(actions.setInitialized): {
 			return { ...state, initialized: true }
 		}
-		case AppTypes.SHOW_MESSAGE: {
-			return { ...state, message: action.payload }
+		case getType(actions.showMessage): {
+			return { ...state, message: action.message }
 		}
-		case AppTypes.DELETE_MESSAGE: {
+		case getType(actions.deleteMessage): {
 			return { ...state, message: '' }
 		}
 		default: {
@@ -23,5 +25,3 @@ const reducer: Reducer<IAppReducer> = (state = initialState, action) => {
 		}
 	}
 }
-
-export default reducer

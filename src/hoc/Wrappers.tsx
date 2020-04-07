@@ -1,17 +1,17 @@
-import React, { ReactNode } from 'react'
-import { compose } from 'redux'
-import withSnackbar from './withSnackbar/withSnackbar'
+import React, { ReactNode } from 'react';
+import { compose } from 'redux';
+import withSnackbar from './withSnackbar/withSnackbar';
 
 interface IProps {
-	children: ReactNode
+	children: ReactNode;
 	// any other props that come into the component
 }
 
-const Wrappers = (props: IProps) => {
+const Wrappers = ({ children }: IProps) => {
 	const ChildrenWithWrappers = compose(withSnackbar)(() => (
-		<>{props.children}</>
-	)) as React.FunctionComponent
-	return <ChildrenWithWrappers />
-}
+		<>{children}</>
+	)) as React.FunctionComponent;
+	return <ChildrenWithWrappers />;
+};
 
-export default Wrappers
+export default Wrappers;

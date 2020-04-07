@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import Snackbar from '@material-ui/core/Snackbar'
-import IconButton from '@material-ui/core/IconButton'
-import CloseIcon from '@material-ui/icons/Close'
-import { connect } from 'react-redux'
-import { IApplicationState } from '../../store/reducers'
-import { deleteMessage } from '../../store/actions/app'
+import React, { useEffect, useState } from 'react';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import Snackbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
+import { connect } from 'react-redux';
+import { IApplicationState } from '../../store/reducers';
+import { deleteMessage } from '../../store/actions/app';
 
 const mapStateToProps = ({ app }: IApplicationState) => ({
 	message: app.message
-})
+});
 
 const mapDispatchToProps = {
 	deleteMessage
-}
+};
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -21,68 +21,68 @@ const useStyles = makeStyles((theme: Theme) =>
 			padding: theme.spacing(0.5)
 		}
 	})
-)
+);
 
 export interface IWithSnackbar {
-	message: string
-	deleteMessage: () => void
+	message: string;
+	deleteMessage: () => void;
 }
 
 export interface ISnackbarMessage {
-	message: string
-	key: number
+	message: string;
+	key: number;
 }
 
 const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 	const WithSnackbar = ({ message, deleteMessage }: IWithSnackbar) => {
-		const queueRef = React.useRef<ISnackbarMessage[]>([])
+		const queueRef = React.useRef<ISnackbarMessage[]>([]);
 
-		const [open, setOpen] = useState(false)
+		const [open, setOpen] = useState(false);
 
 		const [messageInfo, setMessageInfo] = React.useState<
 			ISnackbarMessage | undefined
-		>(undefined)
+		>(undefined);
 
 		const processQueue = () => {
 			if (queueRef.current.length > 0) {
-				setMessageInfo(queueRef.current.shift())
-				setOpen(true)
+				setMessageInfo(queueRef.current.shift());
+				setOpen(true);
 			}
-		}
+		};
 
 		useEffect(() => {
 			if (!!message && message.length > 0) {
 				queueRef.current.push({
 					message,
 					key: new Date().getTime()
-				})
+				});
 
 				if (open) {
-					setOpen(false)
+					setOpen(false);
 				} else {
-					processQueue()
+					processQueue();
 				}
 			}
-		}, [message])
+		}, [message]);
 
 		const handleClose = (
 			event: React.SyntheticEvent | MouseEvent,
 			reason?: string
 		) => {
 			if (reason === 'clickaway') {
-				return
+				return;
 			}
-			deleteMessage()
-			setOpen(false)
-		}
+			deleteMessage();
+			setOpen(false);
+		};
 
 		const handleExited = () => {
-			processQueue()
-		}
+			processQueue();
+		};
 
-		const classes = useStyles()
+		const classes = useStyles();
 		return (
-			<div>
+			<>
 				<Snackbar
 					key={messageInfo ? messageInfo.key : undefined}
 					anchorOrigin={{
@@ -90,7 +90,7 @@ const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 						horizontal: 'left'
 					}}
 					open={open}
-					autoHideDuration={4000}
+					autoHideDuration={2500}
 					onClose={handleClose}
 					onExited={handleExited}
 					message={messageInfo ? messageInfo.message : undefined}
@@ -111,11 +111,11 @@ const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 					}
 				/>
 				<WrappedComponent />
-			</div>
-		)
-	}
+			</>
+		);
+	};
 
-	return connect(mapStateToProps, mapDispatchToProps)(WithSnackbar)
-}
+	return connect(mapStateToProps, mapDispatchToProps)(WithSnackbar);
+};
 
-export default withSnackbar
+export default withSnackbar;

@@ -8,7 +8,7 @@ export interface IApp {
 	// persistor: Persistor
 }
 
-export interface IAppReducer {
+export type IAppReducer = Readonly<{
 	initialized: boolean
 	message: string
-}
+}>

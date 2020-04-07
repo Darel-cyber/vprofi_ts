@@ -1,7 +1,7 @@
-import React from 'react'
-import { Route, Switch, Redirect } from 'react-router-dom'
-import NotFoundPage from './pages/NotFoundPage/NotFound'
-import MainPage from './pages/MainPage/MainPage'
+import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import NotFoundPage from './pages/NotFoundPage/NotFound';
+import MainPage from './pages/MainPage/MainPage';
 
 const Routes = () => {
 	return (
@@ -10,7 +10,7 @@ const Routes = () => {
 			<Route path="/404" exact component={() => <NotFoundPage />} />
 			<Redirect to="/404" />
 		</Switch>
-	)
-}
+	);
+};
 
-export default Routes
+export default Routes;
