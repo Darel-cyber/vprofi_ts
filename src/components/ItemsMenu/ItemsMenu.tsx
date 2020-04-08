@@ -4,6 +4,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { green } from '@material-ui/core/colors';
 
 interface ITabPanelProps {
 	children?: React.ReactNode;
@@ -13,7 +14,7 @@ interface ITabPanelProps {
 
 interface ITabParams {
 	id: string;
-	ariaControls: string;
+	'aria-controls': string;
 }
 
 const TabPanel = (props: ITabPanelProps) => {
@@ -35,7 +36,7 @@ const TabPanel = (props: ITabPanelProps) => {
 
 const makeTabParams = (index: number): ITabParams => ({
 	id: `vertical-tab-${index}`,
-	ariaControls: `vertical-tabpanel-${index}`
+	'aria-controls': `vertical-tabpanel-${index}`
 });
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -61,6 +62,11 @@ const ItemsMenu = () => {
 	return (
 		<div className={classes.root}>
 			<Tabs
+				TabIndicatorProps={{
+					style: {
+						backgroundColor: green[500]
+					}
+				}}
 				orientation="vertical"
 				variant="scrollable"
 				value={value}

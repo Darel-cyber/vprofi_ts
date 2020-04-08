@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a1b0ce7-5a7c-43a5-a940-48bee8449561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ItemsMenu/ItemsMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ItemsMenu/itemsMenu.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ItemsMenu/itemsMenu.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/rubric.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/constants/rubric.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/rubric-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/sagas/appSagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/sagas/rubricSagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/types/rubric.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/Wrappers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Wrappers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/withSnackbar/withSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withSnackbar/withSnackbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemsMenu/ItemsMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsMenu/ItemsMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/configureStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/configureStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/constants/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/types/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types/app.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -48,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vprofiapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-km-client" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -129,7 +122,8 @@
       <workItem from="1586115281959" duration="1199000" />
       <workItem from="1586176543653" duration="10715000" />
       <workItem from="1586205530912" duration="7710000" />
-      <workItem from="1586283183188" duration="6901000" />
+      <workItem from="1586283183188" duration="8975000" />
+      <workItem from="1586352774733" duration="5814000" />
     </task>
     <servers />
   </component>
