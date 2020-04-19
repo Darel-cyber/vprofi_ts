@@ -1,0 +1,162 @@
+/*
+@media only screen — только для экранов монитора;
+min-width — условие «истина», когда ширина окна браузера больше установленного значения;
+max-width — условие «истина», когда ширина окна браузера наоборот меньше установленного значения;
+min-device-width — условие «истина», когда размер экрана устройства больше установленного значения;
+max-device-width — условие «истина», когда размер экрана устройства меньше установленного значения;
+*/
+
+.specialty {
+  width: 30%;
+  margin: 1%;
+}
+
+.allSpecializations {
+  column-count: 3;
+}
+
+//Смартфоны (Портрет и ландшафтный)
+@media only screen and (min-device-width: 1px) and (max-device-width: 399px) {
+  .specialty {
+    width: 99%;
+    text-align: left;
+  }
+
+  .allSpecializations {
+    column-count: 1;
+  }
+}
+
+//iPhone 4
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .specialty {
+    width: 99%;
+    text-align: left;
+  }
+
+  .allSpecializations {
+    column-count: 1;
+  }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 480px) {
+  .specialty {
+    width: 45%;
+    margin: 2%;
+  }
+
+  .allSpecializations{
+    column-count: 2;
+  }
+}
+
+//Смартфоны (ландшафтный)
+@media only screen and (min-width: 321px) {
+  .specialty {
+    width: 99%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 1;
+  }
+}
+
+//Смартфоны (portrait)
+@media only screen and (max-width: 320px) {
+  .specialty {
+    width: 99%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 1;
+  }
+}
+
+//iPads (Портрет и Ландшафтный)
+@media only screen and (min-device-width: 668px) and (max-device-width: 1024px) {
+  .specialty {
+    width: 45%;
+    margin: 2%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 2;
+  }
+}
+
+//iPads (Ландшафтный)
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .specialty {
+    width: 45%;
+    margin: 2%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 2;
+  }
+}
+
+//iPads (Портрет)
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .specialty {
+    width: 45%;
+    margin: 2%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 2;
+  }
+}
+
+//Настольные компьютеры и ноутбуки
+@media only screen and (min-width: 1025px) {
+  .specialty {
+    width: 30%;
+    margin: 1%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 3;
+  }
+}
+
+//Экраны
+@media only screen and (min-width: 1498px) {
+  .specialty {
+    width: 20%;
+    margin: 2%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 4;
+  }
+}
+
+//Большие экраны
+@media only screen and (min-width: 1824px) {
+  .specialty {
+    width: 20%;
+    margin: 2%;
+    text-align: left;
+  }
+
+  .allSpecializations{
+    column-count: 5;
+  }
+}
+
+
+
+//templ
+@media screen and (min-width: 768px) {
+  .categories {
+    float: right;
+  }
+}

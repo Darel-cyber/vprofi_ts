@@ -1,0 +1,170 @@
+@import 'column.module';
+
+$hoverColor: red;
+$backgroundColor: #FFFFFF;
+$borderColor: rgb(50, 148, 63);
+$arrowColor: rgba(0, 0, 0, .30);
+
+.tabsPanel {
+	position: absolute;
+	border: 2px solid $borderColor;
+	background-color: $backgroundColor;
+	width: 100%;
+}
+
+.tabsPanel_tabsPanelHidden {
+	border-width: 0;
+	padding-bottom: 0;
+	min-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1;
+	transform: translate3d(0, -30px, 0);
+	transition: visibility 0s ease-in .15s, opacity .15s ease-in, transform .15s ease-in;
+}
+
+.tabsPanel_tabsPanelOpen {
+	min-height: 600px;
+	position: relative;
+	z-index: 1;
+	visibility: visible;
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+	transition: visibility 0s ease-out, opacity .25s ease-out, transform .25s ease-out;
+}
+
+.container {
+	position: relative;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 100%;
+	margin-left: -9px;
+}
+
+.tab_tabHover {
+	border-radius: 4px;
+	background-color: #f4f4f4;
+}
+
+.tab {
+	display: flex;
+	width: 90%;
+	cursor: pointer;
+	margin-bottom: 1px;
+	height: 36px;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	color: #333;
+	user-select: none;
+
+	&:first-child {
+		margin-top: 15px;
+	}
+
+	&:hover {
+		border-radius: 4px;
+		background-color: #f4f4f4;
+	}
+
+	a {
+		height: 100%;
+		width: 100%;
+		padding-left: 11px;
+		color: #222;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.arrow {
+		float: right;
+		margin-right: 10px;
+		color: $arrowColor;
+	}
+}
+
+.specialtySpecialization {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.currentDirectionName {
+	margin-top: 32px;
+}
+
+.currentDirectionName a {
+	height: 36px;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.29;
+	color: #222;
+}
+
+.currentDirectionName a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.styleBoxForSpecializationsView {
+}
+
+.arrowBack {
+	margin: 0 20px 10px 0;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.arrowBack:hover {
+	color: red;
+}
+
+.specialty {
+	display: flex;
+	flex-direction: column;
+	text-overflow: ellipsis;
+}
+
+.specialtyName {
+}
+
+.specialtyName a {
+	height: 20px;
+	cursor: pointer;
+	color: #000;
+	font-weight: 700;
+}
+
+.specialtyName a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+
+.specializations {
+	display: flex;
+	flex-direction: column;
+}
+
+.specialization {
+	padding-right: 5px;
+	color: #888;
+	cursor: pointer;
+	transition: color .25s ease-out, border-color .25s ease-out;
+}
+
+.specialization:hover {
+	color: red;
+	text-decoration: none;
+}

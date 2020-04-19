@@ -5,6 +5,8 @@ import { combineReducers } from 'redux';
 import { History } from 'history';
 import { connectRouter, RouterState } from 'connected-react-router';
 import { IRubricReducer } from '../types/rubric';
+import { all, fork } from 'redux-saga/effects';
+import rubricSagas from '../sagas/rubricSagas';
 
 export interface IApplicationState {
 	app: IAppReducer;
@@ -19,7 +21,6 @@ export const createRootReducer = (history: History) =>
 		router: connectRouter(history)
 	});
 
-/*
 export function* rootSaga() {
-	yield all([fork(companiesSaga), fork(stationsSaga)])
-}*/
+	yield all([fork(rubricSagas)]);
+}

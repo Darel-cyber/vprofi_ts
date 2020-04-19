@@ -10,3 +10,7 @@ export const showMessage = createCustomAction(
 
 export const deleteMessage = createAction(AppTypes.DELETE_MESSAGE)();
 
+export const setGlobalLoader = createCustomAction(
+	AppTypes.SET_GLOBAL_LOADER,
+	(status: boolean) => ({ status })
+);

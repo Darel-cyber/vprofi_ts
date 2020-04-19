@@ -5,6 +5,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { green } from '@material-ui/core/colors';
+import { IDirection, ISpecialization, ISpecialty } from '../../store/types/rubric';
+import RightSide from './components/RightSide';
 
 interface ITabPanelProps {
 	children?: React.ReactNode;
@@ -17,6 +19,12 @@ interface ITabParams {
 	'aria-controls': string;
 }
 
+interface IItemMenu {
+	directions: IDirection[];
+	specialties: ISpecialty[];
+	specializations: ISpecialization[];
+}
+
 const TabPanel = (props: ITabPanelProps) => {
 	const { children, value, index, ...other } = props;
 
@@ -27,9 +35,10 @@ const TabPanel = (props: ITabPanelProps) => {
 			hidden={value !== index}
 			id={`vertical-tabpanel-${index}`}
 			aria-labelledby={`vertical-tab-${index}`}
+			style={{ width: '84%' }}
 			{...other}
 		>
-			{value === index && <Box p={3}>{children}</Box>}
+			{value === index && <Box p={3} pr={0}>{children}</Box>}
 		</Typography>
 	);
 };
@@ -44,14 +53,14 @@ const useStyles = makeStyles((theme: Theme) => ({
 		flexGrow: 1,
 		backgroundColor: theme.palette.background.paper,
 		display: 'flex',
-		height: 500
+		minHeight: 500
 	},
 	tabs: {
 		borderRight: `1px solid ${theme.palette.divider}`
 	}
 }));
 
-const ItemsMenu = () => {
+const ItemsMenu = ({ directions, specialties, specializations }: IItemMenu) => {
 	const classes = useStyles();
 	const [value, setValue] = React.useState<number>(0);
 
@@ -74,35 +83,25 @@ const ItemsMenu = () => {
 				aria-label="Vertical tabs example"
 				className={classes.tabs}
 			>
-				<Tab label="Item One" {...makeTabParams(0)} />
-				<Tab label="Item Two" {...makeTabParams(1)} />
-				<Tab label="Item Three" {...makeTabParams(2)} />
-				<Tab label="Item Four" {...makeTabParams(3)} />
-				<Tab label="Item Five" {...makeTabParams(4)} />
-				<Tab label="Item Six" {...makeTabParams(5)} />
-				<Tab label="Item Seven" {...makeTabParams(6)} />
+				{directions.map((direction: IDirection, key: number) => (
+					<Tab label={`${direction.name}`} key={key} {...makeTabParams(direction.id)} />
+				))}
 			</Tabs>
-			<TabPanel value={value} index={0}>
-				Item One
-			</TabPanel>
-			<TabPanel value={value} index={1}>
-				Item Two
-			</TabPanel>
-			<TabPanel value={value} index={2}>
-				Item Three
-			</TabPanel>
-			<TabPanel value={value} index={3}>
-				Item Four
-			</TabPanel>
-			<TabPanel value={value} index={4}>
-				Item Five
-			</TabPanel>
-			<TabPanel value={value} index={5}>
-				Item Six
-			</TabPanel>
-			<TabPanel value={value} index={6}>
-				Item Seven
-			</TabPanel>
+
+			{directions.map((direction: IDirection, key: number) => (
+				<TabPanel key={key} value={value} index={key}>
+					{direction.haveChild ? (
+						<RightSide
+							direction={direction}
+							specialties={specialties}
+							specializations={specializations}
+							key={`rightSide${key}`}
+						/>
+					) : (
+						<span>No Data</span>
+					)}
+				</TabPanel>
+			))}
 		</div>
 	);
 };

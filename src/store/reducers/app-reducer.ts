@@ -3,8 +3,9 @@ import * as actions from '../actions/app';
 import { ActionType, getType } from 'typesafe-actions';
 
 const initialState: IAppReducer = {
-	initialized: false,
-	message: ''
+	isInitialized: false,
+	message: '',
+	globalLoader: false
 };
 
 export type AppActions = ActionType<typeof actions>;
@@ -12,7 +13,7 @@ export type AppActions = ActionType<typeof actions>;
 export default (state = initialState, action: AppActions): IAppReducer => {
 	switch (action.type) {
 		case getType(actions.setInitialized): {
-			return { ...state, initialized: true };
+			return { ...state, isInitialized: true };
 		}
 
 		case getType(actions.showMessage): {
@@ -21,6 +22,10 @@ export default (state = initialState, action: AppActions): IAppReducer => {
 
 		case getType(actions.deleteMessage): {
 			return { ...state, message: '' };
+		}
+
+		case getType(actions.setGlobalLoader): {
+			return { ...state, globalLoader: action.status };
 		}
 
 		default: {
