@@ -39,9 +39,7 @@ const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 
 		const [open, setOpen] = useState(false);
 
-		const [messageInfo, setMessageInfo] = React.useState<
-			ISnackbarMessage | undefined
-		>(undefined);
+		const [messageInfo, setMessageInfo] = React.useState<ISnackbarMessage | undefined>(undefined);
 
 		const processQueue = () => {
 			if (queueRef.current.length > 0) {
@@ -65,10 +63,7 @@ const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 			}
 		}, [message]);
 
-		const handleClose = (
-			event: React.SyntheticEvent | MouseEvent,
-			reason?: string
-		) => {
+		const handleClose = (event: React.SyntheticEvent | MouseEvent, reason?: string) => {
 			if (reason === 'clickaway') {
 				return;
 			}
@@ -99,12 +94,7 @@ const withSnackbar = (WrappedComponent: React.FunctionComponent) => {
 							{/*	<Button color="secondary" size="small" onClick={handleClose}>
 								UNDO
 							</Button>*/}
-							<IconButton
-								aria-label="close"
-								color="inherit"
-								className={classes.close}
-								onClick={handleClose}
-							>
+							<IconButton aria-label="close" color="inherit" className={classes.close} onClick={handleClose}>
 								<CloseIcon />
 							</IconButton>
 						</>

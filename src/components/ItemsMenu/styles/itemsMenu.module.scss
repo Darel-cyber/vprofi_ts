@@ -99,10 +99,6 @@ $arrowColor: rgba(0, 0, 0, .30);
 	width: 100%;
 }
 
-.currentDirectionName {
-	margin-top: 32px;
-}
-
 .currentDirectionName a {
 	height: 36px;
 	font-weight: 700;
@@ -116,28 +112,15 @@ $arrowColor: rgba(0, 0, 0, .30);
 	text-decoration: none;
 }
 
-.styleBoxForSpecializationsView {
-}
-
-.arrowBack {
-	margin: 0 20px 10px 0;
-	cursor: pointer;
-	font-weight: 700;
-	font-size: 28px;
-}
-
-.arrowBack:hover {
-	color: red;
-}
-
 .specialty {
 	display: flex;
 	flex-direction: column;
 	text-overflow: ellipsis;
 }
-
+/*
 .specialtyName {
 }
+*/
 
 .specialtyName a {
 	height: 20px;
