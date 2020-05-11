@@ -5,7 +5,8 @@ import { ActionType, getType } from 'typesafe-actions';
 const initialState: IAppReducer = {
 	isInitialized: false,
 	message: '',
-	globalLoader: false
+	globalLoader: false,
+	publicHeader: false
 };
 
 export type AppActions = ActionType<typeof actions>;
@@ -26,6 +27,10 @@ export default (state = initialState, action: AppActions): IAppReducer => {
 
 		case getType(actions.setGlobalLoader): {
 			return { ...state, globalLoader: action.status };
+		}
+
+		case getType(actions.setPublicHeaderVisible): {
+			return { ...state, publicHeader: action.status };
 		}
 
 		default: {

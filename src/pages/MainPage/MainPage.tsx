@@ -1,11 +1,12 @@
-import React from 'react';
-import { showMessage } from '../../store/actions/app';
+import React, { useEffect } from 'react';
+import { setPublicHeaderVisible, showMessage } from '../../store/actions/app';
 import { IApplicationState } from '../../store/reducers';
 import { Button } from '@material-ui/core';
 import { connect } from 'react-redux';
 
 interface IMainPage {
 	showMessage: (message: string) => void;
+	setPublicHeaderVisible: (isVisible: boolean) => void;
 }
 
 const styled = (color: string) => ({
@@ -17,7 +18,11 @@ const styled = (color: string) => ({
 	backgroundColor: color
 });
 
-const MainPage = ({ showMessage }: IMainPage) => {
+const MainPage = ({ showMessage, setPublicHeaderVisible }: IMainPage) => {
+	useEffect(() => {
+		setPublicHeaderVisible(true);
+	}, []);
+
 	return (
 		<div>
 			<div style={styled('pink')} />
@@ -48,7 +53,8 @@ const MainPage = ({ showMessage }: IMainPage) => {
 const mapStateToProps = null;
 
 const mapDispatchToProps = {
-	showMessage
+	showMessage,
+	setPublicHeaderVisible
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainPage);

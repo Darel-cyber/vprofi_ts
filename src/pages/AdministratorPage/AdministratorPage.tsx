@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import { useMediaQuery } from '@material-ui/core';
 import useTheme from '@material-ui/core/styles/useTheme';
@@ -10,9 +10,14 @@ import CategoryIcon from '@material-ui/icons/Category';
 import SettingsIcon from '@material-ui/icons/Settings';
 import { IPages } from '../../interfaces/IPages.d';
 import Topbar from './components/Topbar';
+import { setPublicHeaderVisible, showMessage } from '../../store/actions/app';
+import { connect } from 'react-redux';
 
 interface IAdministratorPage {
 	component: ReactNode;
+	showMessage: (message: string) => void;
+	setPublicHeaderVisible: (isVisible: boolean) => void;
+
 }
 
 const useStyles = makeStyles(theme => ({
@@ -60,8 +65,12 @@ const user = {
 	bio: 'Директор проекта'
 };
 
-const AdministratorPage = ({ component }: IAdministratorPage) => {
+const AdministratorPage = ({ component, showMessage, setPublicHeaderVisible }: IAdministratorPage) => {
 	const classes = useStyles();
+	useEffect(() => {
+		console.log('rerender');
+	}, []);
+
 	const theme = useTheme();
 	const isDesktop = useMediaQuery(theme.breakpoints.up('lg'), {
 		defaultMatches: true
@@ -99,4 +108,11 @@ const AdministratorPage = ({ component }: IAdministratorPage) => {
 	);
 };
 
-export default AdministratorPage;
+const mapStateToProps = null;
+
+const mapDispatchToProps = {
+	showMessage,
+	setPublicHeaderVisible
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AdministratorPage);

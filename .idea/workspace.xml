@@ -2,39 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a1b0ce7-5a7c-43a5-a940-48bee8449561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatars/avatar_9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/AccountAvatar/AccountAvatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/LittleCard/LittleCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Sidebar/Sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/SidebarNav/SidebarNav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/TableCard/TableCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/withHeader/withHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IPages.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/AdministratorPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Categories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Settings.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Topbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Slava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/CustomTableCell/CustomTableCell.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/LiteTableCard/LiteTableCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/StatusBullet/StatusBullet.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/admin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/constants/admin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/admin-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/sagas/adminSagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/api/admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsMenu/styles/itemsMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsMenu/styles/itemsMenu.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/withSnackbar/withSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withSnackbar/withSnackbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotFoundPage/NotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFoundPage/NotFound.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/TableCard/TableCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/AdministratorPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/AdministratorPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/MainPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/constants/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/types/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types/app.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -59,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-material-dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -72,22 +62,23 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Slava\WebstormProjects\v_profi_ts\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
     <property name="ts.external.directory.path" value="C:\Users\Slava\WebstormProjects\v_profi_ts\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\public\avatars" />
-      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\pages\AdministratorPage\components" />
-      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\public" />
-      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\components\ItemsMenu\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\components\common\Sidebar" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\pages\AdministratorPage\components" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\components\ItemsMenu\styles" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\components\ItemsMenu" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\components\ItemsMenu\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\store\reducers" />
+      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\store\constants" />
+      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\public\avatars" />
+      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\pages\AdministratorPage\components" />
+      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -162,6 +153,9 @@
       <workItem from="1587506426177" duration="4003000" />
       <workItem from="1587584555648" duration="8808000" />
       <workItem from="1587674775360" duration="1348000" />
+      <workItem from="1587915381007" duration="5295000" />
+      <workItem from="1587922456857" duration="17034000" />
+      <workItem from="1588601400253" duration="2861000" />
     </task>
     <servers />
   </component>

@@ -16,7 +16,7 @@ const Routes = () => {
 				<Redirect to={'/admin/dashboard'} />
 			</Route>
 			<Switch>
-				<Route path="/" exact component={withHeader(MainPage)} />
+				<Route path="/" exact component={MainPage} />
 				<Route path="/admin/dashboard" exact component={() => <AdministratorPage component={<Dashboard />} />} />
 				<Route path="/admin/users" exact component={() => <AdministratorPage component={<Users />} />} />
 				<Route path="/admin/categories" exact component={() => <AdministratorPage component={<Categories />} />} />
