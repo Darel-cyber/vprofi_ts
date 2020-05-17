@@ -1,1 +1,5 @@
-export {};
+export enum AdminTypes {
+	SET_LOADER = '@@ADMIN/SET_LOADER',
+	GET_USERS = '@@ADMIN/GET_USERS',
+	SET_USERS = '@@ADMIN/SET_USERS'
+}

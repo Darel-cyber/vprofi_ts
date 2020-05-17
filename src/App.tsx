@@ -41,7 +41,7 @@ const App = ({ isInitialized, globalLoader, getRubricsSaga, isHeaderVisible }: I
 
 	return (
 		<div className="App">
-			<Backdrop className={classes.backdrop} open={globalLoader} >
+			<Backdrop className={classes.backdrop} open={globalLoader}>
 				<CircularProgress color="inherit" />
 			</Backdrop>
 

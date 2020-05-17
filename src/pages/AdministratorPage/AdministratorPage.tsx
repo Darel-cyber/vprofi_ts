@@ -61,7 +61,7 @@ const pages: IPages[] = [
 // потом это будет приходить с бека
 const user = {
 	name: 'Келигов Сулумбек',
-	avatarAddress: '/avatars/avatar.png',
+	avatarAddress: '/images/avatars/avatar.png',
 	bio: 'Директор проекта'
 };
 
