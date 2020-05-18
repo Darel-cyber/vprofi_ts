@@ -17,7 +17,6 @@ interface IAdministratorPage {
 	component: ReactNode;
 	showMessage: (message: string) => void;
 	setPublicHeaderVisible: (isVisible: boolean) => void;
-
 }
 
 const useStyles = makeStyles(theme => ({

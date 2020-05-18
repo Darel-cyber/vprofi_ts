@@ -17,6 +17,7 @@ import {
 	Typography
 } from '@material-ui/core';
 import getInitials from '../../../../../utils/getInitials';
+import { ICurrentUser } from '../IUsers';
 
 const useStyles = makeStyles(theme => ({
 	root: {},
@@ -35,14 +36,16 @@ const useStyles = makeStyles(theme => ({
 	},
 	actions: {
 		justifyContent: 'flex-end'
-	},
+	}
 }));
 
 interface IUsersTable {
 	users: IUser[];
+	showAd: () => void;
+	setCurrentUser: (user: ICurrentUser) => void;
 }
 
-const UsersTable = ({ users }: IUsersTable) => {
+const UsersTable = ({ users, showAd, setCurrentUser }: IUsersTable) => {
 	const classes = useStyles();
 
 	const [selectedUsers, setSelectedUsers] = useState<number[]>([]);
@@ -61,7 +64,10 @@ const UsersTable = ({ users }: IUsersTable) => {
 		setSelectedUsers(selectedUsers);
 	};
 
-	const handleSelectOne = (event: React.ChangeEvent<HTMLInputElement>, id: number) => {
+	const handleSelectOne = (event: any, id: number) => {
+		// event.preventDefault();
+		event.stopPropagation();
+
 		const selectedIndex = selectedUsers.indexOf(id);
 		let newSelectedUsers: number[] = [];
 
@@ -119,12 +125,16 @@ const UsersTable = ({ users }: IUsersTable) => {
 										hover
 										key={user.id}
 										selected={selectedUsers.indexOf(user.id) !== -1}
+										onClick={() => {
+											setCurrentUser({ id: user.id, name: user.name });
+											showAd();
+										}}
 									>
 										<TableCell padding="checkbox">
 											<Checkbox
 												checked={selectedUsers.indexOf(user.id) !== -1}
 												color="primary"
-												onChange={event => handleSelectOne(event, user.id)}
+												onClick={event => handleSelectOne(event, user.id)}
 												value="true"
 											/>
 										</TableCell>

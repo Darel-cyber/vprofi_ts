@@ -1,15 +1,18 @@
 import { IApplicationState } from '../../../../store/reducers';
-import { getUsers } from '../../../../store/actions/admin';
+import { getAdsSaga, getUsersSaga } from '../../../../store/actions/admin';
 import { connect } from 'react-redux';
 import Users from './Users';
 
 const mapStateToProps = (state: IApplicationState) => ({
 	users: state.admin.users,
-	loader: state.admin.loader
+	usersLoader: state.admin.usersLoader,
+	adsLoader: state.admin.adsLoader,
+	ads: state.admin.ads
 });
 
 const mapDispatchToProps = {
-	getUsers
+	getUsers: getUsersSaga,
+	getAdsSaga: getAdsSaga
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Users);

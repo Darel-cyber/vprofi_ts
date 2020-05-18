@@ -1,0 +1,47 @@
+.modal {
+	padding: 0;
+	max-width: calc(100% - calc(50% - 400px));
+	min-width: 200px;
+	min-height: 150px;
+	background: white;
+	border: 1px solid grey;
+	z-index: 5;
+	position: relative;
+	border-radius: 4px;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+
+	&Overflow {
+		width: 100%;
+		padding: 40px 0;
+		min-height: 100%;
+		display: flex;
+		outline: none;
+
+		& * {
+			outline: none;
+		}
+	}
+
+	&Flex {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+	
+	&Background {
+		position: fixed;
+		width: 100%;
+		z-index: 0;
+		top: 0;
+		height: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.modal {
+		max-width: calc(100% - 50px);
+	}
+}
