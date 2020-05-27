@@ -20,24 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1b0ce7-5a7c-43a5-a940-48bee8449561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/MaterialModal/MaterialModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/MaterialModal/materialModal.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/Ads.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/AdsToolbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/ads.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/styles/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/CustomTable/CustomTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/CustomTable/CustomTableRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/CustomTable/TableWithPagination.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/users.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/AdministratorPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/AdministratorPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/IUsers.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/IUsers.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/CustomTableCell/CustomTableCell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/CustomTable/CustomTableCell.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/LiteTableCard/LiteTableCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/LiteTableCard/LiteTableCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/Ads.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/Ads.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/AdsToolbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/AdsToolbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/ads.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/ads.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/UsersContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/UsersContainer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersTable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/admin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/constants/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/admin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/admin-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/admin-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas/adminSagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/adminSagas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types/admin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api/admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersToolbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersToolbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +51,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="8687c783-1045-4084-948f-617723559d19" />
   </component>
   <component name="ProjectId" id="1XLv1XHix4ZAxAMBT7cALASk5ft" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,7 +80,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Slava\WebstormProjects\v_profi_ts\node_modules\prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -93,11 +92,11 @@
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\public\avatars" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/common/CustomTable" />
       <recent name="$PROJECT_DIR$/public/images/avatars" />
       <recent name="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users" />
       <recent name="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\components\common\Sidebar" />
-      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\pages\AdministratorPage\components" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -171,7 +170,10 @@
       <workItem from="1589808607291" duration="1787000" />
       <workItem from="1589811347690" duration="2324000" />
       <workItem from="1589816263247" duration="16029000" />
-      <workItem from="1589836648347" duration="3958000" />
+      <workItem from="1589836648347" duration="5331000" />
+      <workItem from="1589912110461" duration="10890000" />
+      <workItem from="1590254024785" duration="36337000" />
+      <workItem from="1590431160757" duration="667000" />
     </task>
     <servers />
   </component>
@@ -196,10 +198,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="364" key="#ESLint" timestamp="1589824337516">
+    <state x="623" y="364" key="#ESLint" timestamp="1590272083768">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="623" y="364" key="#ESLint/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589824337516" />
+    <state x="623" y="364" key="#ESLint/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590272083768" />
     <state x="635" y="-629" key="#ESLint/0.23.1440.826/-195.-1057.1920.1057@-195.-1057.1920.1057" timestamp="1589751116562" />
     <state x="354" y="135" key="#Inspections" timestamp="1589817357672">
       <screen x="0" y="0" width="1440" height="900" />
@@ -230,42 +232,48 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1379" height="194" key="GridCell.Tab.0.right/0.23.1440.826/-195.-1057.1920.1057@0.23.1440.826" timestamp="1589310133963" />
-    <state x="353" y="-798" key="IDE.errors.dialog" timestamp="1589744956667">
-      <screen x="-195" y="-1080" width="1920" height="1080" />
+    <state x="411" y="235" key="IDE.errors.dialog" timestamp="1590255495748">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="353" y="-798" key="IDE.errors.dialog/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589744956667" />
-    <state x="352" y="149" key="SettingsEditor" timestamp="1589821412717">
+    <state x="411" y="235" key="IDE.errors.dialog/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590255495748" />
+    <state x="352" y="149" key="SettingsEditor" timestamp="1589840878392">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="274" y="-901" key="SettingsEditor/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589749322993" />
-    <state x="352" y="149" key="SettingsEditor/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589821412717" />
+    <state x="352" y="149" key="SettingsEditor/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589840878392" />
     <state x="365" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1589749507124">
       <screen x="-195" y="-1080" width="1920" height="1080" />
     </state>
     <state x="365" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589749507124" />
-    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589811843504">
+    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590325064992">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="-9" y="-923" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589747108804" />
-    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589811843504" />
+    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590325064992" />
     <state x="-9" y="-903" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.826/-195.-1057.1920.1057@-195.-1057.1920.1057" timestamp="1589751580784" />
     <state x="87" y="-619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589742745763">
       <screen x="-195" y="-1080" width="1920" height="1080" />
     </state>
     <state x="87" y="-619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589742745763" />
-    <state x="74" y="-785" width="586" height="490" key="find.popup" timestamp="1589743955613">
-      <screen x="-195" y="-1080" width="1920" height="1080" />
+    <state x="202" y="232" width="568" height="490" key="find.popup" timestamp="1589914871844">
+      <screen x="0" y="0" width="1440" height="849" />
     </state>
+    <state x="202" y="232" width="568" height="490" key="find.popup/0.0.1440.849/-195.-1057.1920.1057@0.0.1440.849" timestamp="1589914871844" />
     <state x="74" y="-785" width="586" height="490" key="find.popup/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589743955613" />
+    <state x="202" y="246" width="568" height="490" key="find.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589912486262" />
     <state x="202" y="249" width="568" height="490" key="find.popup/0.23.1440.826/-195.-1057.1920.1057@0.23.1440.826" timestamp="1589740262165" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1589744609167">
-      <screen x="-195" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="600" height="428" key="javadoc.popup/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589744609167" />
-    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup" timestamp="1589838202544">
+    <state width="450" height="357" key="javadoc.popup" timestamp="1590323306542">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589744609167" />
+    <state width="450" height="357" key="javadoc.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590323306542" />
+    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup" timestamp="1590325722449">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="170" y="190" width="670" height="533" key="search.everywhere.popup/0.0.1440.849/-195.-1057.1920.1057@0.0.1440.849" timestamp="1589914702057" />
+    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900/-195.-1057.1920.1057@0.0.1440.900" timestamp="1590316222821" />
     <state x="32" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589314066526" />
-    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589838202544" />
+    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590325722449" />
   </component>
 </project>

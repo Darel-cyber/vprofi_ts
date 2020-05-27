@@ -28,13 +28,18 @@ const useStyles = makeStyles(theme => ({
 	}
 }));
 
-const UsersToolbar = () => {
+interface IUsersToolbar {
+	count: number[];
+}
+
+const UsersToolbar = ({ count }: IUsersToolbar) => {
 	const classes = useStyles();
 
 	return (
 		<div className={classes.root}>
 			<div className={classes.row}>
 				<span className={classes.spacer} />
+				<div style={{ width: '240px' }}>Выделено пользователей {count.length}</div>
 				<Button className={classes.importButton} disabled>
 					Import
 				</Button>

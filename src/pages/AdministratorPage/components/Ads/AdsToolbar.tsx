@@ -1,8 +1,7 @@
 import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import {Button, Typography} from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import SearchInput from '../../../../components/common/SearchInput/SearchInput';
-import clsx from 'clsx';
 import styles from './ads.module.scss';
 
 const useStyles = makeStyles(theme => ({
@@ -38,18 +37,20 @@ const AdsToolbar = ({ label }: IAdsToolbar) => {
 	const classes = useStyles();
 
 	return (
-		<div className={clsx(classes.root, styles.toolbar)}>
-			<Typography variant="h2">{label}</Typography>
-			<div className={styles.buttons}>
-				<Button color="primary" variant="contained" size="small" disabled>
-					Добавить
-				</Button>
-				<Button color="secondary" variant="contained" size="small" disabled>
-					Удалить
-				</Button>
-			</div>
-			<div className={classes.row}>
-				<SearchInput placeholder="Введите id объявления" onChange={() => console.log('change')} />
+		<div className={styles.toolbar}>
+			<Typography variant="h5">{label}</Typography>
+			<div className={classes.root}>
+				<div className={styles.buttons}>
+					<Button color="primary" variant="contained" size="small" disabled>
+						Добавить
+					</Button>
+					<Button color="secondary" variant="contained" size="small" disabled>
+						Удалить
+					</Button>
+				</div>
+				<div className={classes.row}>
+					<SearchInput placeholder="Введите id объявления" onChange={() => console.log('change')} />
+				</div>
 			</div>
 		</div>
 	);

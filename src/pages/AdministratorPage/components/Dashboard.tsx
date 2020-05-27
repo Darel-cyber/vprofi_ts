@@ -5,9 +5,9 @@ import LittleCard from '../../../components/common/LittleCard/LittleCard';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
-import LiteTableCard, { ITableConfig, ITableData } from '../../../components/common/LiteTableCard/LiteTableCard';
 import { requestDashboard } from '../../../utils/api/admin';
-import { Simulate } from 'react-dom/test-utils';
+import { ITableConfig, ITableData, ITableTitles } from '../../../components/common/CustomTable/CustomTable';
+import LiteTableCard from '../../../components/common/LiteTableCard/LiteTableCard';
 
 const getDashboard = (): Promise<ITableData[]> =>
 	new Promise((resolve, reject) => {
@@ -22,11 +22,25 @@ const getDashboard = (): Promise<ITableData[]> =>
 			});
 	});
 
-const tableConfig: ITableConfig = {
+const tableTitles: ITableTitles = {
 	name: 'Имя',
 	id: 'id',
 	date: 'Дата регистрации',
 	status: 'Статус'
+};
+
+const dataConfig: ITableConfig = {
+	name: 'default',
+	id: 'default',
+	date: 'default',
+	status: 'status'
+};
+
+const headerConfig: ITableConfig = {
+	name: 'default',
+	id: 'default',
+	date: 'default',
+	status: 'default'
 };
 
 const useStyles = makeStyles(theme => ({
@@ -60,19 +74,25 @@ const Dashboard = () => {
 			<Grid container spacing={4}>
 				<Grid item lg={3} sm={6} xl={3} xs={12}>
 					<LittleCard
-						label={'TOTAL USERS'}
-						value={'1,600'}
-						icon={<PeopleIcon className={classes.icon} />}
+						extraIcon={<ArrowUpwardIcon className={classes.differenceIcon} />}
 						extraLabel={'Since last month'}
 						extraValue={'16%'}
-						extraIcon={<ArrowUpwardIcon className={classes.differenceIcon} />}
+						icon={<PeopleIcon className={classes.icon} />}
+						label={'TOTAL USERS'}
+						value={'1,600'}
 					/>
 				</Grid>
 				<Grid item lg={3} sm={6} xl={3} xs={12}>
 					<LittleCard label={'TOTAL PROFIT'} value={'$23,200'} icon={<AttachMoneyIcon className={classes.icon} />} />
 				</Grid>
 				<Grid item lg={8} md={8} xl={6} xs={12}>
-					<LiteTableCard tableName={'Новые пользователи'} tableConfig={tableConfig} tableData={tableData} />
+					<LiteTableCard
+						headerConfig={headerConfig}
+						dataConfig={dataConfig}
+						tableTitles={tableTitles}
+						tableData={tableData}
+						tableName={'Новые пользователи'}
+					/>
 				</Grid>
 			</Grid>
 		</div>
