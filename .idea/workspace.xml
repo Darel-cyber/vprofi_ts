@@ -20,20 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1b0ce7-5a7c-43a5-a940-48bee8449561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/CustomTable/CustomTable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/CustomTable/CustomTableRow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/CustomTable/TableWithPagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/users.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Categories/CategoriesContainer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Categories/сategories.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/CustomTableCell/CustomTableCell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/CustomTable/CustomTableCell.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/LiteTableCard/LiteTableCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/LiteTableCard/LiteTableCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/Ads.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/Ads.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/AdsToolbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/AdsToolbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/ads.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Ads/ads.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersTable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersToolbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children/UsersToolbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemsMenu/ItemsMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsMenu/ItemsMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemsMenu/components/RightSide.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsMenu/components/RightSide.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/AdministratorPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/AdministratorPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Categories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdministratorPage/components/Categories/Categories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/rubric-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/rubric-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
-        <option value="SCSS File" />
         <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -80,23 +76,23 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Slava\WebstormProjects\v_profi_ts\node_modules\prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/AdministratorPage/components/Categories" />
+      <recent name="$PROJECT_DIR$/src/components/common/CustomTable" />
+      <recent name="$PROJECT_DIR$/public/images/avatars" />
+      <recent name="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users" />
+      <recent name="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/common" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\store\reducers" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\store\constants" />
       <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\public\avatars" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/common/CustomTable" />
-      <recent name="$PROJECT_DIR$/public/images/avatars" />
-      <recent name="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users" />
-      <recent name="$PROJECT_DIR$/src/pages/AdministratorPage/components/Users/children" />
-      <recent name="C:\Users\Slava\WebstormProjects\v_profi_ts\src\components\common\Sidebar" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -174,6 +170,8 @@
       <workItem from="1589912110461" duration="10890000" />
       <workItem from="1590254024785" duration="36337000" />
       <workItem from="1590431160757" duration="667000" />
+      <workItem from="1590592992048" duration="13892000" />
+      <workItem from="1590695053572" duration="6048000" />
     </task>
     <servers />
   </component>
@@ -198,10 +196,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="364" key="#ESLint" timestamp="1590272083768">
+    <state x="623" y="364" key="#ESLint" timestamp="1590611624014">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="623" y="364" key="#ESLint/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590272083768" />
+    <state x="623" y="364" key="#ESLint/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590611624014" />
     <state x="635" y="-629" key="#ESLint/0.23.1440.826/-195.-1057.1920.1057@-195.-1057.1920.1057" timestamp="1589751116562" />
     <state x="354" y="135" key="#Inspections" timestamp="1589817357672">
       <screen x="0" y="0" width="1440" height="900" />
@@ -237,43 +235,43 @@
     </state>
     <state x="353" y="-798" key="IDE.errors.dialog/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589744956667" />
     <state x="411" y="235" key="IDE.errors.dialog/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590255495748" />
-    <state x="352" y="149" key="SettingsEditor" timestamp="1589840878392">
+    <state x="352" y="149" key="SettingsEditor" timestamp="1590608775366">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="274" y="-901" key="SettingsEditor/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589749322993" />
-    <state x="352" y="149" key="SettingsEditor/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589840878392" />
+    <state x="352" y="149" key="SettingsEditor/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590608775366" />
     <state x="365" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1589749507124">
       <screen x="-195" y="-1080" width="1920" height="1080" />
     </state>
     <state x="365" y="-800" key="Vcs.Push.Dialog.v2/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589749507124" />
-    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590325064992">
+    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590703046114">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="-9" y="-923" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589747108804" />
-    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590325064992" />
+    <state x="140" y="131" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590703046114" />
     <state x="-9" y="-903" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.826/-195.-1057.1920.1057@-195.-1057.1920.1057" timestamp="1589751580784" />
     <state x="87" y="-619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589742745763">
       <screen x="-195" y="-1080" width="1920" height="1080" />
     </state>
     <state x="87" y="-619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589742745763" />
-    <state x="202" y="232" width="568" height="490" key="find.popup" timestamp="1589914871844">
-      <screen x="0" y="0" width="1440" height="849" />
+    <state x="202" y="246" width="568" height="490" key="find.popup" timestamp="1590703273641">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="202" y="232" width="568" height="490" key="find.popup/0.0.1440.849/-195.-1057.1920.1057@0.0.1440.849" timestamp="1589914871844" />
     <state x="74" y="-785" width="586" height="490" key="find.popup/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589743955613" />
-    <state x="202" y="246" width="568" height="490" key="find.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1589912486262" />
+    <state x="202" y="246" width="568" height="490" key="find.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590703273641" />
     <state x="202" y="249" width="568" height="490" key="find.popup/0.23.1440.826/-195.-1057.1920.1057@0.23.1440.826" timestamp="1589740262165" />
     <state width="450" height="357" key="javadoc.popup" timestamp="1590323306542">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589744609167" />
     <state width="450" height="357" key="javadoc.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590323306542" />
-    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup" timestamp="1590325722449">
+    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup" timestamp="1590702181307">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="170" y="190" width="670" height="533" key="search.everywhere.popup/0.0.1440.849/-195.-1057.1920.1057@0.0.1440.849" timestamp="1589914702057" />
     <state x="170" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900/-195.-1057.1920.1057@0.0.1440.900" timestamp="1590316222821" />
     <state x="32" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-195.-1080.1920.1080@-195.-1080.1920.1080" timestamp="1589314066526" />
-    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590325722449" />
+    <state x="170" y="201" width="670" height="564" key="search.everywhere.popup/0.0.1440.900/-195.-1080.1920.1080@0.0.1440.900" timestamp="1590702181307" />
   </component>
 </project>

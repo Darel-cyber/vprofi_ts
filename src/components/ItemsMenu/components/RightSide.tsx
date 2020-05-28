@@ -93,9 +93,9 @@ const RightSide = ({ direction, specialties, specializations }: IRightSide) => {
 				) : (
 					<Paper elevation={0} className={classes.innerPaper}>
 						<CurrentSpecialities
+							selectSpeciality={selectSpeciality}
 							specialities={specialties.filter((speciality: ISpecialty) => speciality.direction_id === direction.id)}
 							specializations={specializations}
-							selectSpeciality={selectSpeciality}
 						/>
 					</Paper>
 				)}

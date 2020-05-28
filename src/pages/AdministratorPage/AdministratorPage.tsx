@@ -12,6 +12,7 @@ import { IPages } from '../../interfaces/IPages.d';
 import Topbar from './components/Topbar';
 import { setPublicHeaderVisible, showMessage } from '../../store/actions/app';
 import { connect } from 'react-redux';
+import { getRubricsSaga } from '../../store/actions/rubric';
 
 interface IAdministratorPage {
 	component: ReactNode;
@@ -21,8 +22,8 @@ interface IAdministratorPage {
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		paddingTop: 56,
-		height: '100%',
+		// paddingTop: 56,
+		//height: '100%', сделать  calc(100% - размер хедера)
 		[theme.breakpoints.up('sm')]: {
 			paddingTop: 64
 		}
@@ -66,9 +67,6 @@ const user = {
 
 const AdministratorPage = ({ component, showMessage, setPublicHeaderVisible }: IAdministratorPage) => {
 	const classes = useStyles();
-	useEffect(() => {
-		console.log('rerender');
-	}, []);
 
 	const theme = useTheme();
 	const isDesktop = useMediaQuery(theme.breakpoints.up('lg'), {

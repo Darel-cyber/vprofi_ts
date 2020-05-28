@@ -10,10 +10,7 @@ const initialState: IRubricReducer = {
 
 export type RubricActions = ActionType<typeof actions>;
 
-export default (
-	state = initialState,
-	action: RubricActions
-): IRubricReducer => {
+export default (state = initialState, action: RubricActions): IRubricReducer => {
 	switch (action.type) {
 		case getType(actions.setDirections): {
 			return { ...state, directions: action.directions };

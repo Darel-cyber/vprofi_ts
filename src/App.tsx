@@ -30,10 +30,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const App = ({ isInitialized, globalLoader, getRubricsSaga, isHeaderVisible }: IApp) => {
 	useEffect(() => {
-		if (isHeaderVisible) {
-			getRubricsSaga();
-		}
-	}, [isHeaderVisible]);
+		getRubricsSaga();
+	}, []);
 
 	const classes = useStyles();
 

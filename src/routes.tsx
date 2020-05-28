@@ -4,7 +4,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFound';
 import MainPage from './pages/MainPage/MainPage';
 import AdministratorPage from './pages/AdministratorPage/AdministratorPage';
 import Dashboard from './pages/AdministratorPage/components/Dashboard';
-import Categories from './pages/AdministratorPage/components/Categories';
+import Categories from './pages/AdministratorPage/components/Categories/CategoriesContainer';
 import Settings from './pages/AdministratorPage/components/Settings';
 import UsersContainer from './pages/AdministratorPage/components/Users/UsersContainer';
 

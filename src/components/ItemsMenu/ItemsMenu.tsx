@@ -30,15 +30,19 @@ const TabPanel = (props: ITabPanelProps) => {
 
 	return (
 		<Typography
+			aria-labelledby={`vertical-tab-${index}`}
 			component="div"
-			role="tabpanel"
 			hidden={value !== index}
 			id={`vertical-tabpanel-${index}`}
-			aria-labelledby={`vertical-tab-${index}`}
+			role="tabpanel"
 			style={{ width: '84%' }}
 			{...other}
 		>
-			{value === index && <Box p={3} pr={0}>{children}</Box>}
+			{value === index && (
+				<Box p={3} pr={0}>
+					{children}
+				</Box>
+			)}
 		</Typography>
 	);
 };
@@ -71,17 +75,17 @@ const ItemsMenu = ({ directions, specialties, specializations }: IItemMenu) => {
 	return (
 		<div className={classes.root}>
 			<Tabs
+				aria-label="Vertical tabs example"
+				className={classes.tabs}
+				onChange={handleChange}
+				orientation="vertical"
 				TabIndicatorProps={{
 					style: {
 						backgroundColor: green[500]
 					}
 				}}
-				orientation="vertical"
-				variant="scrollable"
 				value={value}
-				onChange={handleChange}
-				aria-label="Vertical tabs example"
-				className={classes.tabs}
+				variant="scrollable"
 			>
 				{directions.map((direction: IDirection, key: number) => (
 					<Tab label={`${direction.name}`} key={key} {...makeTabParams(direction.id)} />
@@ -93,9 +97,9 @@ const ItemsMenu = ({ directions, specialties, specializations }: IItemMenu) => {
 					{direction.haveChild ? (
 						<RightSide
 							direction={direction}
-							specialties={specialties}
-							specializations={specializations}
 							key={`rightSide${key}`}
+							specializations={specializations}
+							specialties={specialties}
 						/>
 					) : (
 						<span>No Data</span>
